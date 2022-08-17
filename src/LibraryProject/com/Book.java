@@ -5,6 +5,7 @@ public class Book {
     String bookName;
     String author;
     String year;
+    String newVar;
 
     public Book() {}
     public Book(int id,String bookName,String author,String year){
