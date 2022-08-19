@@ -17,18 +17,22 @@ public class Transaction {
     }
 
     public Accounts getBy() {
+
         return by;
     }
 
     public void setBy(Accounts by) {
+
         this.by = by;
     }
 
     public int getTid() {
+
         return tid;
     }
 
     public void setTid(int tid) {
+
         this.tid = tid;
     }
 

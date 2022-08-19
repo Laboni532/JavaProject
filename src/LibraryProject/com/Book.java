@@ -5,14 +5,15 @@ public class Book {
     String bookName;
     String author;
     String year;
-    String newVar;
+    int amount;
 
     public Book() {}
-    public Book(int id,String bookName,String author,String year){
+    public Book(int id,String bookName,String author,String year,int amount){
         this.id=id;
         this.author=author;
         this.bookName=bookName;
         this.year=year;
+        this.amount=amount;
     }
 
     public int getId() {
@@ -46,8 +47,17 @@ public class Book {
     public void setYear(String year) {
         this.year = year;
     }
-    public void print(){
-        System.out.println(id+ "   BOOK NAME : " +bookName+ "AUTHOR: "+author+ "YEAR : "+year);
+
+    public int getAmount() {
+        return amount;
     }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
+
+    public String toString(){
+       return id+ "   BOOK NAME : " +bookName+ "  AUTHOR: "+author+ "  YEAR : "+year;
+    }
+}
 

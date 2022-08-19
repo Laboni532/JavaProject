@@ -1,11 +1,14 @@
 package callByValue.com;
 
 public class Utlity {
+    public static int multiply(int a, int b){
+        return a*b;
+    }
     public static void display(int number){
         System.out.println("Number"+ number);
     }
     public static void display(String word){
-        System.out.println("Word"+ word);
+        System.out.println(word);
     }
     public static void display(double number){
         System.out.println("Number"+ number);
@@ -16,12 +19,12 @@ public class Utlity {
        for(String s:name)
            display(s);
    }
-    public static void main(String[] args) {
-        Utlity.display(10);
-        Utlity.display(10.5);
-        Utlity.display("Hundred");
-        String [] nameArray={"gg","yy","kk"};
-        Utlity.display(nameArray);
-
-    }
+//    public static void main(String[] args) {
+//        Utlity.display(10);
+//        Utlity.display(10.5);
+//        Utlity.display("Hundred");
+//        String [] nameArray={"gg","yy","kk"};
+//        Utlity.display(nameArray);
+//
+//    }
 }
